@@ -9,7 +9,8 @@ import sys
 os.system("title WARP-PLUS-CLOUDFLARE By ALIILAPRO")
 os.system('cls' if os.name == 'nt' else 'clear')
 
-referrer = "IY19s7y3-78h1P2OZ-723FWmw6"
+env_key = os.environ.get("CF_KEY")
+referrer = env_key
 def genString(stringLength):
 	try:
 		letters = string.ascii_letters + string.digits
